@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
 
 function Explanation(){
-const Explanation = (props) => {
+ 
   return (
     <div>
       <Jumbotron>
@@ -19,6 +19,6 @@ const Explanation = (props) => {
     </div>
   );
 };
-}
+
 
 export default Explanation;
