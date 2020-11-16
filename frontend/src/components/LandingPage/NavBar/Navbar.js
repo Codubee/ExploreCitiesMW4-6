@@ -2,7 +2,7 @@
 import * as ReactBootStrap from 'react-bootstrap'
 function Navbar(){
     return (<div>
-        <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
+        <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <ReactBootStrap.Navbar.Brand href="#home">Explore Cities</ReactBootStrap.Navbar.Brand>
       <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
