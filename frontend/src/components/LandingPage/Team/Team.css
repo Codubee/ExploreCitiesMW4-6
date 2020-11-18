@@ -1,6 +1,6 @@
 .Team { 
 	color:black; 
-	background-color:rgb(83, 83, 231); 
+	background-color:#98C1D9;
 	padding:5px; 
 } 
 
@@ -11,8 +11,3 @@ h1 {
 .text {
     font-size: larger;
 }
-
-.Card {
-    max-width: 50%;
-}
-

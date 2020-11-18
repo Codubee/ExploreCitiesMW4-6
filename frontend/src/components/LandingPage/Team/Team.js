@@ -1,9 +1,10 @@
 import React from 'react';
 import {
-    Card, CardImg, CardText, CardBody,
+    Card, CardText, CardBody,
     CardTitle, CardHeader, CardLink
   } from 'reactstrap';
   import './Team.css'
+
 
   const Team = (props) => {
     return (
@@ -12,7 +13,6 @@ import {
         <TeamCard 
           class="TeamCard"
           memberName="Imaad Aziz"
-          imageSource="profpic.jpg"
           memberDescription="Imaad is a sophomore at the University of Texas at Dalllas majoring in Computer Science with a minor in business analytics. When he isn't developing websites he enjoys watching basketball and playing video games. His github 
           can be found below."
           link='https://github.com/ImaadAziz'
@@ -56,8 +56,7 @@ import {
 
 const TeamCard = (props) => {
     return (
-        <Card class='Card' style={{backgroundColor:"#eee", borderColor:"#333", margin:".5%"}}>
-          <CardImg src={props.imageSource}></CardImg>
+        <Card class='card-class' style={{backgroundColor:"#eee", borderColor:"#333", margin:".5%"}}>
           <CardBody>
             <CardTitle tag='h2'>{props.memberName}</CardTitle>
 
