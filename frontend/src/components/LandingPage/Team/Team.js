@@ -59,7 +59,6 @@ const TeamCard = (props) => {
         <Card class='card-class' style={{backgroundColor:"#eee", borderColor:"#333", margin:".5%"}}>
           <CardBody>
             <CardTitle tag='h2'>{props.memberName}</CardTitle>
-
             <CardText class='text'>{props.memberDescription}</CardText>
             <CardLink class='link' href={props.link}>{props.link}</CardLink>
           </CardBody>
