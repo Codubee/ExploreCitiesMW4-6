@@ -3,6 +3,7 @@ import {
     Card, CardText, CardBody,
     CardTitle, CardHeader, CardLink
   } from 'reactstrap';
+  import TeamCard from './TeamCard'
   import './Team.css'
 
 
