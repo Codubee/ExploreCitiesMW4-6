@@ -1,16 +1,15 @@
 import React from 'react'
-import Navbar from './NavBar/Navbar'
 import Explanation from './Explanation/Explanation'
 
 //Import components that you create here
+import Navbar from './NavBar/Navbar'
 
 function LandingPage(){
     return(
         //Use components that you import here
-    <div>
+        <div>
         <Navbar/>
-       
-            <Explanation/>
+        <Explanation/>
         </div>
          
     )
