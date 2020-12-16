@@ -10,19 +10,16 @@ function Features()
             <h1 id = "header">App Features</h1>
             <div className = "features">
                 <FeaturesCard
-                    CardImg = "Stock photo"
                     CardTitle = "Explore nearby cities!"
-                    CardText = "Description"
+                    CardText = "Find cities near you to go on adventures!"
                     Button = "Explore now!"
                 />
                 <FeaturesCard
-                    CardImg = "Stock photo"
                     CardTitle = "Enjoy the local cuisine!"
                     CardText = "Want to know where the best resturants are at?"
                     Button = "Explore now!"
                 />
                 <FeaturesCard
-                    CardImg = "Stock photo"
                     CardTitle = "Find cool things to do!"
                     CardText = "Want to go to a museum? Or maybe an art gallery? What about a historical monument?"
                     Button = "Explore now!"
