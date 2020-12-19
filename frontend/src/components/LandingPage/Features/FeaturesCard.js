@@ -6,8 +6,7 @@ import {
 import './FeaturesCard.css'
 
 function FeaturesCard(props) {
-    return
-    (
+    return(
         <Card className = "features-card-class">
             <CardBody>
                 <CardTitle tag='h2'>

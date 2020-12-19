@@ -4,8 +4,7 @@ import './Features.css'
 
 function Features()
 {
-    return
-    (
+    return(
         <div className = "featuresPage">
             <h1 id = "header">App Features</h1>
             <div className = "features">
