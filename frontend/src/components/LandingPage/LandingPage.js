@@ -1,7 +1,9 @@
 import React from 'react'
 import Explanation from './Explanation/Explanation'
-import Team from './Team/Team'
+
+//Import components that you create here
 import Tools from './Tools/Tools'
+import Features from './Features/Features'
 
 function LandingPage() {
         return (
@@ -9,6 +11,7 @@ function LandingPage() {
                 <>
                         <Explanation />
                         <Tools />
+                        <Features />
                         <Team />
                 </>
         )
