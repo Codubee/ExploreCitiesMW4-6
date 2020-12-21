@@ -6,14 +6,6 @@ app.use(express.json())
 
 const port = 8080;
 
-app.get('/',(req,res)=>{
-    res.send('Hello world');
-})
-
-app.listen(port,()=>{
-    console.log('API is up and running')
-})
-
 app.get('/weatherbit/:zip',(req,res)=>{
     console.log(req.params.zip)
     let zip = req.params.zip
@@ -27,5 +19,9 @@ app.get('/weatherbit/:zip',(req,res)=>{
         console.log(error)
         res.status(400).json({error:"Error Occurred"})
     })
+})
+
+app.listen(port,()=>{
+    console.log('API is up and running')
 })
 module.exports = app;
