@@ -1,7 +1,6 @@
 import React from 'react'
 import Explanation from './Explanation/Explanation'
-
-//Import components that you create here
+import Team from './Team/Team'
 import Tools from './Tools/Tools'
 import Features from './Features/Features'
 
