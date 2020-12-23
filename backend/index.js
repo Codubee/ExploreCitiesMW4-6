@@ -6,6 +6,10 @@ app.use(express.json())
 
 const port = 8080;
 
+app.get('/',(req,res)=>{
+    res.send('Hello world');
+})
+
 app.get('/weatherbit/:zip',(req,res)=>{
     console.log(req.params.zip)
     let zip = req.params.zip
