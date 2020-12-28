@@ -41,8 +41,6 @@ app.get('/weatherbit/:zip',(req,res)=>{
     })
 })
 
-
-
 app.get('/yelpGetThingsToDo',(req,res)=>{
 
     let zip = req.query.zip
