@@ -1,0 +1,16 @@
+.bg-custom{
+    color:#293241;
+    background-color: #98C1D9;
+}
+.navbar-brand{
+    color:#293241 !important;
+    
+}
+.navbar-custom{
+    color:#293241 !important;
+}
+.nav-link {
+    color: #293241;
+    text-decoration: none;
+    background-color: transparent;
+};
