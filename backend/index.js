@@ -10,6 +10,22 @@ app.get('/',(req,res)=>{
     res.send('Hello world');
 })
 
+app.get('/zipcodesInRadius',(req,res)=>{
+    console.log(reg.params.zip)
+    let zip = req.params.zip
+    let distance = req.params.distance
+    const key = process.env.ZIP_KEY
+    axios.get("https://www.zipcodeapi.com/rest/"+key+"/radius.json/"+zip+"/"+distance+"/km")
+    .then((response)=>{
+        console.log(response)
+        res.status(200).json(response.data)
+    })
+    .catch((error)=>{
+        console.log(error)
+        res.status(400).json({error:"Error Occurred"})
+    })
+})
+
 app.get('/weatherbit/:zip',(req,res)=>{
     console.log(req.params.zip)
     let zip = req.params.zip
