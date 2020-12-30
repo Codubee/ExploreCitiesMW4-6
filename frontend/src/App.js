@@ -24,29 +24,27 @@ export default function App() {
         <nav>
           <ul>
             <NavBar />
-            <li>
-              <Link to ="/">Home</Link>
-            </li>
-            <li>
-              <Link to = "/explanation">Explanation</Link>
-            </li>
-            <li>
-              <Link to = "/features">Features</Link>
-            </li>
-            <li>
-              <Link to = "/team">Team</Link>
-            </li>
-            <li>
-              <Link to = "/tools">Tools</Link>
-            </li>
-            
+            <div2>
+              <ul>
+                <Link to = "/explanation">Explanation</Link>
+              </ul>
+              <ul>
+                <Link to = "/features">Features</Link>
+              </ul>
+              <ul>
+                <Link to = "/team">Team</Link>
+              </ul>
+              <ul>
+                <Link to = "/tools">Tools</Link>
+              </ul>
+            </div2>
           </ul>
         </nav>
         
         <Switch>
           <Route exact path ="/">
-            <Home />
-            <h3>Welcome to Explore Cities!</h3>
+            <h2>Welcome to Explore Cities!</h2>
+            <LandingPage />
           </Route>
           <Route path ="/explanation">
             <Explanation />
@@ -66,8 +64,4 @@ export default function App() {
       </div>
     </Router>
   );
-}
-
-function Home(){
-  return <h2>Home</h2>
 }
