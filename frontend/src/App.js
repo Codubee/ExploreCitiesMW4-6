@@ -24,20 +24,6 @@ export default function App() {
         <nav>
           <ul>
             <NavBar />
-            <div2>
-              <ul>
-                <Link to = "/explanation">Explanation</Link>
-              </ul>
-              <ul>
-                <Link to = "/features">Features</Link>
-              </ul>
-              <ul>
-                <Link to = "/team">Team</Link>
-              </ul>
-              <ul>
-                <Link to = "/tools">Tools</Link>
-              </ul>
-            </div2>
           </ul>
         </nav>
         

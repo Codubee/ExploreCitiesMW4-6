@@ -12,7 +12,10 @@ function Navbar() {
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
 
             <ReactBootStrap.Nav.Link class="nav-link" href="https://github.com/Codubee/ExploreCitiesMW4-6" >Github</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/" >Home</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="/explanation" >Explanation</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="/features" >Features</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="/team" >Team</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="/tools" >Tools</ReactBootStrap.Nav.Link>
 
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>
