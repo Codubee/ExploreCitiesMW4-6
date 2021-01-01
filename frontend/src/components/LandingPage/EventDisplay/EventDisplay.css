@@ -1,0 +1,27 @@
+.event-list {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.event-item {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin: 10px 0px;
+    background-color: gray;
+}
+
+.event-item-data {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+.event-item > img {
+    min-width: 100px;
+    max-width: 10%;
+}
