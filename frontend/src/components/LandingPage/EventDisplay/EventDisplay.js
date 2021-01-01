@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import './EventDisplay.css'
-import { Container, Row, Col } from 'reactstrap'
+import { Row, Col, Card, CardBody, CardSubtitle, CardTitle } from 'reactstrap'
 
 
 class EventDisplay extends React.Component
@@ -36,27 +36,25 @@ class EventDisplay extends React.Component
     render()
     {
         return (
-        <div>
+        <div class="event-display-container">
             <h1>Nearby Things To Do</h1>
-            <Container className="event-list">
-                    {this.state.events.map((data)=>{
-                        return (
-                            <div class="event-item">
-                                <img src={data.image_url}/>
-                                <div class="event-item-data">
-                                    <h1>{data.name}  {data.price}  <a href={data.url} target="_blank">Link</a></h1>
-                                    
-                                    <h3>
-                                        {data.categories.reduce((combined,cat) => {
-                                            return {"title":combined.title + ", " + cat.title}
-                                        }).title}
-                                    </h3>
-                                    <span>{data.rating} Stars</span>
-                                </div>
-                            </div>
-                        )
-                    })}
-            </Container>
+            <Row className="events-display">
+                {this.state.events.map((data)=>{
+                    return (
+                        <Col md="12" lg="6" xl="4">
+                            <Card className="event-item" onClick={()=>{window.open(data.url, "_blank")}}>
+                                <img src={data.image_url} />
+                                <CardBody className="event-item-data">
+                                    <CardTitle tag="h2" target="_blank">{data.name} </CardTitle>
+                                    <CardSubtitle tag="h5" className="mb-2 text-muted">
+                                        {data.price}  {data.categories.reduce((combined,cat) => { return {"title":combined.title+", "+cat.title} }).title}
+                                    </CardSubtitle>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                    )
+                })}
+            </Row>
         </div>
         )
     }

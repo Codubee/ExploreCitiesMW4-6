@@ -4,6 +4,7 @@ import Team from './Team/Team'
 import Tools from './Tools/Tools'
 import Features from './Features/Features'
 import EventDisplay from './EventDisplay/EventDisplay'
+
 function LandingPage() {
         return (
                 //Use components that you import here
