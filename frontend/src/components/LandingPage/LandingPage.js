@@ -9,8 +9,8 @@ function LandingPage() {
                 //Use components that you import here
                 <>
                         <Explanation />
-                        <Tools />
                         <Features />
+                        <Tools />
                         <Team />
                 </>
         )

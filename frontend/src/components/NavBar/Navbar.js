@@ -1,4 +1,5 @@
 import * as ReactBootStrap from 'react-bootstrap'
+import {Link, Switch} from "react-router-dom";
 import "./NavBar.css";
 
 function Navbar() {
@@ -10,12 +11,33 @@ function Navbar() {
           <ReactBootStrap.Navbar.Brand href="/" class="navbar-brand">Explore Cities</ReactBootStrap.Navbar.Brand>
           <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
-
-            <ReactBootStrap.Nav.Link class="nav-link" href="https://github.com/Codubee/ExploreCitiesMW4-6" >Github</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/explanation" >Explanation</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/features" >Features</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/team" >Team</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="/tools" >Tools</ReactBootStrap.Nav.Link>
+         
+              <div classname = "nav-container">
+                <nav>
+                  <ul>
+                    <li>
+                      <Link to = "/explanation" style={{color: '#E0FBFC'}} 
+                      activeStyle={{color: '#ee6c4d'}}>Explanation</Link>
+                    </li>
+                    <li>
+                      <Link to = "/features" style={{color: '#E0FBFC'}}
+                      activeStyle={{color: '#ee6c4d'}}>Features</Link>
+                    </li>
+                    <li>
+                      <Link to = "/team" style={{color: '#E0FBFC'}}
+                      activeStyle={{color: '#ee6c4d'}}>Team</Link>
+                    </li>
+                    <li>
+                      <Link to = "/tools" style={{color: '#E0FBFC'}}
+                      activeStyle={{color: '#ee6c4d'}}>Tools</Link>
+                    </li>
+                    <li>
+                      <a href='https://github.com/Codubee/ExploreCitiesMW4-6' 
+                        style={{color: '#E0FBFC'}} activeStyle={{color: '#ee6c4d'}}>Github</a>
+                    </li>
+                  </ul>                                
+                </nav>
+              </div>
 
           </ReactBootStrap.Navbar.Collapse>
         </ReactBootStrap.Navbar>

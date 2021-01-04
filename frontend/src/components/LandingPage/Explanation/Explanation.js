@@ -20,7 +20,7 @@ function Explanation(){
              <dd> -Eventbrite results regarding that area</dd> 
         </dl>
         <p className="lead">
-          <Button color="primary">Learn More</Button>
+          <Button color="primary" style={{backgroundColor: '#EE6C4D'}}>Learn More</Button>
         </p>
       </Jumbotron>
     </div>

@@ -12,8 +12,7 @@ import React from "react"
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
 
 
@@ -44,7 +43,6 @@ export default function App() {
           <Route path = "/tools">
             <Tools />
           </Route>
-
         </Switch>
 
       </div>
