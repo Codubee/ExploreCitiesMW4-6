@@ -19,7 +19,7 @@ function FeaturesCard(props) {
                     {props.Button}
                 </Button>
             </CardBody>
-        </Card>
+        </Card>       
     )
 }
 
