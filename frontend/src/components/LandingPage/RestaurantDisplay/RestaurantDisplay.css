@@ -1,0 +1,31 @@
+.display-restaurants-container {
+    background-color: #3D5A80;    
+    font-family: 'Dosis', sans-serif;
+}
+
+.display-restaurants-container > h1 {
+    font-weight: 800;
+}
+.event-item-data > h2 {
+    font-weight: 600;
+}
+
+.events-display {
+    margin: 0 10% !important;
+    align-items: center;
+}
+
+.event-item {
+    flex-direction: row !important;
+    padding: 1%;
+    margin: 5px auto;
+    background-color: #98C1D9 !important;
+    border: 1px solid #EE6C4D !important;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px #EE6C4D;
+    cursor: pointer;
+}
+
+.event-item:hover {
+    background-color: #85aabe !important;
+}

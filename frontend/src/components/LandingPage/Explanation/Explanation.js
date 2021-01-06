@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button, CardLink } from 'reactstrap';
+import { Jumbotron, Button } from 'reactstrap';
 import './Explanation.css';
 
 function Explanation(){
