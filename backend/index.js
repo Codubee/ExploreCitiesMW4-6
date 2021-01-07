@@ -10,10 +10,9 @@ app.get('/',(req,res)=>{
     res.send('Hello world');
 })
 
-app.get('/zipcodesInRadius',(req,res)=>{
-    console.log(reg.params.zip)
-    let zip = req.params.zip
-    let distance = req.params.distance
+app.get('/zipcodesInRadius/',(req,res)=>{
+    let zip = req.query.zip
+    let distance = req.query.distance
     const key = process.env.ZIP_KEY
     axios.get("https://www.zipcodeapi.com/rest/"+key+"/radius.json/"+zip+"/"+distance+"/km")
     .then((response)=>{
