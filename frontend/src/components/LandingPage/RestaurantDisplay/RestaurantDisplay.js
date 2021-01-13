@@ -19,7 +19,7 @@ class RestaurantDisplay extends React.Component {
     }
 
     callRestaurantsApi(){
-        axios.get("/getRestaurant?zip="+this.state.zip)
+        axios.get("/getRestaurant/"+this.state.zip)
             .then((response) => {
                 console.log(response)
                 this.setState({
@@ -39,11 +39,14 @@ class RestaurantDisplay extends React.Component {
                     <Col md="12" lg="6" xl="4">
                     <Card> 
                         <CardBody> 
-                            <CardTitle tag="h5"> Title </CardTitle>
+                            <CardTitle tag="h5"> {data.name} </CardTitle>
                             <CardText>
-                                ID: {data.id}
-                                Alias: {data.alias}
                                 Name: {data.name}
+                                Status: {data.is_closed}
+                                Address: {data.address1}
+                                Zipcode: {data.zipcode}
+                                Phone: {data.phone}
+
                             </CardText>
                         </CardBody>
                     
