@@ -93,3 +93,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 [issues-url]: https://github.com/Codubee/ExploreCitiesMW4-6/pulls
 
 [license-shield]: https://img.shields.io/github/license/Codubee/ExploreCitiesMW4-6?style=for-the-badge
+
+[license-url]: https://github.com/Codubee/ExploreCitiesMW4-6/blob/main/License.txt
