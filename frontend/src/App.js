@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Container } from 'reactstrap'
 
 import LandingPage from './components/LandingPage/LandingPage'
 import NavBar from './components/NavBar/Navbar'
@@ -10,9 +11,9 @@ import Tools from './components/LandingPage/Tools/Tools';
 
 import React from "react"
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+  BrowserRouter as Router,
+  Switch,
+  Route,
 } from "react-router-dom";
 
 
@@ -20,31 +21,16 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <NavBar />
-          </ul>
-        </nav>
-        
-        <Switch>
-          <Route exact path ="/">
-            <h2>Welcome to Explore Cities!</h2>
-            <LandingPage />
-          </Route>
-          <Route path ="/explanation">
-            <Explanation />
-          </Route>
-          <Route path ="/features">
-            <Features />
-          </Route>
-          <Route path ="/team">
-            <Team />
-          </Route>
-          <Route path = "/tools">
-            <Tools />
-          </Route>
-        </Switch>
-
+        <NavBar />
+        <Container>
+          <Switch>
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+            <Route path="/input">
+            </Route>
+          </Switch>
+        </Container>
       </div>
     </Router>
   );
