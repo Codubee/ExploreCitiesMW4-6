@@ -15,11 +15,11 @@ function FeaturesCard(props) {
                 <CardText class = 'text'>
                     {props.CardText}
                 </CardText>
-                <Button variant = 'primary' style={{backgroundColor: '#EE6C4D'}}>
+                <Button variant = 'primary'>
                     {props.Button}
                 </Button>
             </CardBody>
-        </Card>       
+        </Card>
     )
 }
 

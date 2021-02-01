@@ -8,7 +8,7 @@ function Features()
         <div className = "featuresPage">
             <h1 id = "header">App Features</h1>
             <div className = "features">
-                <FeaturesCard 
+                <FeaturesCard
                     CardTitle = "Explore nearby cities!"
                     CardText = "Find cities near you to go on adventures!"
                     Button = "Explore now!"
