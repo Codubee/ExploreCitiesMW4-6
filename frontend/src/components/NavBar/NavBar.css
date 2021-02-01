@@ -1,16 +1,36 @@
 .bg-custom{
-    color:#293241;
-    background-color: #98C1D9;
+    color:#E0FBFC;
+    background-color: #3d5a80;
 }
 .navbar-brand{
-    color:#293241 !important;
+    color:#E0FBFC !important;
     
 }
 .navbar-custom{
-    color:#293241 !important;
+    color:#E0FBFC !important;
 }
 .nav-link {
-    color: #293241;
+    color: #E0FBFC;
     text-decoration: none;
     background-color: transparent;
-};
+}
+
+li{
+    display: inline-block;
+    padding-left: 50px;
+}
+
+a{
+    color: #E0FBFC
+}
+a:hover{
+    color: #ee6c4d
+    
+}
+
+.link{
+    color: #E0FBFC
+}
+.link:hover{
+    color: #ee6c4d
+}
